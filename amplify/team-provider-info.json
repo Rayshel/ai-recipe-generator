@@ -9,11 +9,21 @@
       "UnauthRoleName": "amplify-airecipegenerator-dev-a5511-unauthRole",
       "StackName": "amplify-airecipegenerator-dev-a5511",
       "StackId": "arn:aws:cloudformation:us-west-1:536326445293:stack/amplify-airecipegenerator-dev-a5511/04da65f0-1190-11f0-ba70-064f58ef006d",
-      "AmplifyAppId": "d37oz5v0yjjnur"
+      "AmplifyAppId": "d37oz5v0yjjnur",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-airecipegenerator-dev-a5511-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
         "airecipegenerator5641e920": {}
+      },
+      "function": {
+        "generateRecipe": {
+          "deploymentBucketName": "amplify-airecipegenerator-dev-a5511-deployment",
+          "s3Key": "amplify-builds/generateRecipe-4b78363969706c434e37-build.zip"
+        }
+      },
+      "api": {
+        "recipeAPI": {}
       }
     }
   }

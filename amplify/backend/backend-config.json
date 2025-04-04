@@ -1,4 +1,20 @@
 {
+  "api": {
+    "recipeAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "generateRecipe"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "airecipegenerator5641e920": {
       "customAuth": false,
@@ -25,6 +41,32 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "generateRecipe": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_generateRecipe_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "generateRecipe"
+        }
+      ]
+    },
+    "AMPLIFY_function_generateRecipe_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "generateRecipe"
+        }
+      ]
     }
   }
 }
