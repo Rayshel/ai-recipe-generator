@@ -13,7 +13,7 @@ function App({ signOut, user }) {
     setRecipe('');
     
     try {
-      const response = await fetch('/api/generate-recipe', {
+      const response = await fetch('https://pwf79xinr8.execute-api.us-west-1.amazonaws.com/dev/generate-recipe', {
         method: 'POST',
         body: JSON.stringify({ ingredients }),
         headers: { 'Content-Type': 'application/json' },
