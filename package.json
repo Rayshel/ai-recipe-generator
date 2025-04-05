@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "tailwind:build": "node_modules/.bin/tailwindcss -i ./src/index.css -o ./src/output.css --watch"
+    "tailwind:build": ".\\node_modules\\.bin\\tailwindcss.cmd -i ./src/index.css -o ./src/output.css --watch"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^6.10.0",
